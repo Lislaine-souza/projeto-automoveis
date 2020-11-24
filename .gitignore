@@ -1,4 +1,5 @@
-
-*.~1~
 Fonte/__history/
+Fonte/__recovery/
 *.dcu
+*.exe
+
