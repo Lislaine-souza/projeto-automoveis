@@ -1,0 +1,29 @@
+object FPrincipal: TFPrincipal
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Menu'
+  ClientHeight = 460
+  ClientWidth = 900
+  Position = Default
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object penMenu: TPanel
+    Align = Client
+    Size.Width = 900.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 16
+    object Usuarios: TMenuItem
+      Text = 'Usuarios'
+      OnClick = UsuariosClick
+    end
+  end
+end

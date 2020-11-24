@@ -1,0 +1,146 @@
+﻿object FUsuario: TFUsuario
+  Left = 0
+  Top = 0
+  Caption = 'Usu'#225'rio'
+  ClientHeight = 497
+  ClientWidth = 992
+  Fill.Color = xFF056C87
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnIncluir: TButton
+    Position.X = 10.000000000000000000
+    Position.Y = 152.000000000000000000
+    Text = 'Incluir'
+    OnClick = btnIncluirClick
+  end
+  object btnVoltar: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Voltar'
+  end
+  object Grid1: TGrid
+    Align = FitRight
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 224.912567138671900000
+    Size.Width = 767.087402343750000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    RowCount = 0
+    Viewport.Width = 763.100000000000000000
+    Viewport.Height = 472.000000000000000000
+  end
+  object btnCarregar: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+    Text = 'Carregar'
+    OnClick = btnCarregarClick
+  end
+  object Labusuários: TLabel
+    StyledSettings = [Family]
+    Position.X = 32.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {04040000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Usu'#225'rios'
+  end
+  object btnExcluir: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 192.000000000000000000
+    Text = 'Excluir'
+    OnClick = btnExcluirClick
+  end
+  object SQLusuario: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select * from usuarios')
+    Left = 168
+    Top = 216
+    object SQLusuariousuario_id: TIntegerField
+      FieldName = 'usuario_id'
+    end
+    object SQLusuarionome: TStringField
+      FieldName = 'nome'
+      Required = True
+      Size = 50
+    end
+    object SQLusuariosobrenome: TStringField
+      FieldName = 'sobrenome'
+      Required = True
+      Size = 50
+    end
+    object SQLusuarioemail: TStringField
+      FieldName = 'email'
+      Required = True
+      Size = 100
+    end
+    object SQLusuariousuario: TStringField
+      FieldName = 'usuario'
+      Required = True
+      Size = 32
+    end
+    object SQLusuariosenha: TStringField
+      FieldName = 'senha'
+      Required = True
+      Size = 32
+    end
+    object SQLusuarioinfo: TMemoField
+      FieldName = 'info'
+      Required = True
+      BlobType = ftMemo
+    end
+    object SQLusuarionivel_usuario: TStringField
+      FieldName = 'nivel_usuario'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object SQLusuariodta_cadastro: TDateTimeField
+      FieldName = 'dta_cadastro'
+      Required = True
+    end
+    object SQLusuariodta_ultimo_login: TDateTimeField
+      FieldName = 'dta_ultimo_login'
+      Required = True
+    end
+    object SQLusuarioativado: TStringField
+      FieldName = 'ativado'
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object UniTable1: TUniTable
+    Left = 168
+    Top = 288
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 164
+    Top = 373
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLusuario
+    ScopeMappings = <>
+    Left = 160
+    Top = 144
+  end
+end

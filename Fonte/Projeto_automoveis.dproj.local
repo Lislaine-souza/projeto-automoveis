@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/23 21:10:33.000.519,C:\GitHub\projeto-automoveis\Fonte\UCategoria.pas=</Transaction>
+    <Transaction>2020/11/23 21:19:48.000.570,C:\GitHub\projeto-automoveis\Fonte\UClientes.pas=</Transaction>
+    <Transaction>2020/11/23 21:19:56.000.881,C:\GitHub\projeto-automoveis\Fonte\UCadastro_Produto.pas=</Transaction>
+    <Transaction>2020/11/23 21:20:01.000.686,C:\GitHub\projeto-automoveis\Fonte\UCadastro_cliente.pas=</Transaction>
+    <Transaction>2020/11/23 21:20:06.000.818,C:\GitHub\projeto-automoveis\Fonte\UCadastro_categoria.pas=</Transaction>
+    <Transaction>2020/11/23 21:20:19.000.312,C:\GitHub\projeto-automoveis\Fonte\UProduto.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

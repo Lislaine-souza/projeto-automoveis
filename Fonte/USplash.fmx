@@ -1,0 +1,35 @@
+object FSplash: TFSplash
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Tela Splash'
+  ClientHeight = 460
+  ClientWidth = 900
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 0
+  object Progresso: TProgressBar
+    Orientation = Horizontal
+    Position.X = 128.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 384.000000000000000000
+    Position.Y = 408.000000000000000000
+    Text = 'Label2'
+  end
+  object Tempo: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = TempoTimer
+    Left = 112
+    Top = 72
+  end
+end
