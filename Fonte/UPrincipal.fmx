@@ -29,5 +29,9 @@ object FPrincipal: TFPrincipal
       Text = 'Marca'
       OnClick = MenuItem1Click
     end
+    object MenuItem2: TMenuItem
+      Text = 'Modelo'
+      OnClick = MenuItem2Click
+    end
   end
 end

@@ -18,9 +18,11 @@ type
     MainMenu1: TMainMenu;
     Usuarios: TMenuItem;
     MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure UsuariosClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,7 +36,7 @@ implementation
 
 {$R *.fmx}
 
-uses UModulo, USplash, ULogin, UUsuario, UMarca;
+uses UModulo, USplash, ULogin, UUsuario, UMarca, UModelo;
 
 procedure TFPrincipal.FormCreate(Sender: TObject);
 begin
@@ -51,6 +53,12 @@ procedure TFPrincipal.MenuItem1Click(Sender: TObject);
 begin
   FMarca := TFMarca.Create(nil);
   FMarca.Show;
+end;
+
+procedure TFPrincipal.MenuItem2Click(Sender: TObject);
+begin
+  FModelo := TFModelo.Create(nil);
+  FModelo.Show;
 end;
 
 procedure TFPrincipal.UsuariosClick(Sender: TObject);

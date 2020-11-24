@@ -10,7 +10,9 @@ uses
   UUsuario in 'UUsuario.pas' {FUsuario},
   UCadastro_usuario in 'UCadastro_usuario.pas' {FCadastro_usuario},
   UMarca in 'UMarca.pas' {FMarca},
-  UCadastroMarca in 'UCadastroMarca.pas' {FCadastroMarca};
+  UCadastroMarca in 'UCadastroMarca.pas' {FCadastroMarca},
+  UModelo in 'UModelo.pas' {FModelo},
+  UCadastroModelo in 'UCadastroModelo.pas' {FCadastroModelo};
 
 begin
   Application.Initialize;
