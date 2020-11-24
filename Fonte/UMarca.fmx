@@ -1,0 +1,103 @@
+﻿object FMarca: TFMarca
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 1017
+  Fill.Color = xFFDAE2E4
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnIncluir: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 144.000000000000000000
+    Text = 'Incluir'
+    OnClick = btnIncluirClick
+  end
+  object btnVoltar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Voltar'
+    OnClick = btnVoltarClick
+  end
+  object Grid1: TGrid
+    Align = FitRight
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 222.033691406250000000
+    Size.Width = 794.966308593750000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    RowCount = 0
+    Viewport.Width = 791.000000000000000000
+    Viewport.Height = 455.000000000000000000
+  end
+  object btnCarregar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Carregar'
+    OnClick = btnCarregarClick
+  end
+  object Labusuários: TLabel
+    StyledSettings = [Family]
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {04040000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Marca'
+  end
+  object btnExcluir: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 192.000000000000000000
+    Text = 'Excluir'
+    OnClick = btnExcluirClick
+  end
+  object btnEditar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 167.000000000000000000
+    Text = 'Editar'
+    OnClick = btnEditarClick
+  end
+  object SQLListar: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select * from marca')
+    Left = 312
+    Top = 168
+    object SQLListarCOD_MARCA: TIntegerField
+      FieldName = 'COD_MARCA'
+      Required = True
+    end
+    object SQLListarDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLListar
+    ScopeMappings = <>
+    Left = 312
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 316
+    Top = 109
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end

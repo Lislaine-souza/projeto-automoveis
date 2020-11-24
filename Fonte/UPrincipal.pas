@@ -17,8 +17,10 @@ type
     penMenu: TPanel;
     MainMenu1: TMainMenu;
     Usuarios: TMenuItem;
+    MenuItem1: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure UsuariosClick(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,7 +34,7 @@ implementation
 
 {$R *.fmx}
 
-uses UModulo, USplash, ULogin, UUsuario;
+uses UModulo, USplash, ULogin, UUsuario, UMarca;
 
 procedure TFPrincipal.FormCreate(Sender: TObject);
 begin
@@ -43,6 +45,12 @@ begin
   FLogin := TFLogin.Create(nil);
   FLogin.ShowModal;
 
+end;
+
+procedure TFPrincipal.MenuItem1Click(Sender: TObject);
+begin
+  FMarca := TFMarca.Create(nil);
+  FMarca.Show;
 end;
 
 procedure TFPrincipal.UsuariosClick(Sender: TObject);

@@ -8,7 +8,9 @@ uses
   ULogin in 'ULogin.pas' {FLogin},
   UModulo in 'UModulo.pas' {Modulo: TDataModule},
   UUsuario in 'UUsuario.pas' {FUsuario},
-  UCadastro_usuario in 'UCadastro_usuario.pas' {FCadastro_usuario};
+  UCadastro_usuario in 'UCadastro_usuario.pas' {FCadastro_usuario},
+  UMarca in 'UMarca.pas' {FMarca},
+  UCadastroMarca in 'UCadastroMarca.pas' {FCadastroMarca};
 
 begin
   Application.Initialize;

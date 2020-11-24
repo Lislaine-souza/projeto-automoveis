@@ -7,5 +7,9 @@
     <Transaction>2020/11/23 21:20:01.000.686,C:\GitHub\projeto-automoveis\Fonte\UCadastro_cliente.pas=</Transaction>
     <Transaction>2020/11/23 21:20:06.000.818,C:\GitHub\projeto-automoveis\Fonte\UCadastro_categoria.pas=</Transaction>
     <Transaction>2020/11/23 21:20:19.000.312,C:\GitHub\projeto-automoveis\Fonte\UProduto.pas=</Transaction>
+    <Transaction>2020/11/23 21:38:16.000.332,=C:\GitHub\projeto-automoveis\Fonte\Unit1.pas</Transaction>
+    <Transaction>2020/11/23 21:38:41.000.157,C:\GitHub\projeto-automoveis\Fonte\UMarca.pas=C:\GitHub\projeto-automoveis\Fonte\Unit1.pas</Transaction>
+    <Transaction>2020/11/23 21:38:41.000.157,C:\GitHub\projeto-automoveis\Fonte\UMarca.fmx=C:\GitHub\projeto-automoveis\Fonte\Unit1.fmx</Transaction>
+    <Transaction>2020/11/23 21:48:55.095,=C:\GitHub\projeto-automoveis\Fonte\UCadastroMarca.pas</Transaction>
   </Transactions>
 </BorlandProject>

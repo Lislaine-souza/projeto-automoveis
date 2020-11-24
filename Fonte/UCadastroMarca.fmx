@@ -1,0 +1,125 @@
+﻿object FCadastroMarca: TFCadastroMarca
+  Left = 0
+  Top = 0
+  Caption = 'q'
+  ClientHeight = 480
+  ClientWidth = 1017
+  Fill.Color = xFFDAE2E4
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnVoltar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Voltar'
+    OnClick = btnVoltarClick
+  end
+  object btnSalvar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Salvar'
+    OnClick = btnSalvarClick
+  end
+  object Labusuários: TLabel
+    StyledSettings = [Family]
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {04040000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Cadastro de  Marcas'
+  end
+  object Label1: TLabel
+    Position.X = 192.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'C'#243'digo'
+  end
+  object edtCodigo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 192.000000000000000000
+    Position.Y = 112.000000000000000000
+  end
+  object Label2: TLabel
+    Position.X = 192.000000000000000000
+    Position.Y = 144.000000000000000000
+    Text = 'Descri'#231#227'o'
+  end
+  object edtDescricao: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 192.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SQLCadastro: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select m.* '
+      'from marca m'
+      'where m.cod_marca = :cod')
+    Left = 48
+    Top = 176
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'cod'
+        Value = nil
+      end>
+    object SQLCadastroCOD_MARCA: TIntegerField
+      FieldName = 'COD_MARCA'
+      Required = True
+    end
+    object SQLCadastroDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLCadastro
+    ScopeMappings = <>
+    Left = 48
+    Top = 328
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 52
+    Top = 381
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'DESCRICAO'
+      Control = edtDescricao
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'COD_MARCA'
+      Control = edtCodigo
+      Track = False
+    end
+  end
+  object SQLMax: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select max(m.cod_marca) as ULTIMO_COD'
+      'from marca m'
+      '')
+    Left = 40
+    Top = 224
+    object SQLMaxULTIMO_COD: TIntegerField
+      FieldName = 'ULTIMO_COD'
+      ReadOnly = True
+    end
+  end
+end

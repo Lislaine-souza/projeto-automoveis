@@ -4,7 +4,7 @@
   Caption = 'Usu'#225'rio'
   ClientHeight = 497
   ClientWidth = 992
-  Fill.Color = xFF056C87
+  Fill.Color = xFFDAE2E4
   Fill.Kind = Solid
   WindowState = wsMaximized
   FormFactor.Width = 320
@@ -34,8 +34,8 @@
     Size.Height = 497.000000000000000000
     Size.PlatformDefault = False
     RowCount = 0
-    Viewport.Width = 763.100000000000000000
-    Viewport.Height = 472.000000000000000000
+    Viewport.Width = 767.100000000000000000
+    Viewport.Height = 497.000000000000000000
   end
   object btnCarregar: TButton
     Position.X = 8.000000000000000000

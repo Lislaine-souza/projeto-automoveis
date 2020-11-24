@@ -44,7 +44,7 @@ object FLogin: TFLogin
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 2
       Password = True
-      Text = '1234'
+      Text = '123'
       Position.X = 360.000000000000000000
       Position.Y = 72.000000000000000000
       Size.Width = 193.000000000000000000
@@ -54,7 +54,7 @@ object FLogin: TFLogin
     object edtUsuario: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 1
-      Text = 'lislaine'
+      Text = 'lis'
       Position.X = 152.000000000000000000
       Position.Y = 72.000000000000000000
       Size.Width = 193.000000000000000000
