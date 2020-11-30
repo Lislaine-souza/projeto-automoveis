@@ -132,6 +132,14 @@
             <Form>FCadastroModelo</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="UAutomoveis.pas">
+            <Form>FAutomoveis</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="UCadastroVeiculos.pas">
+            <Form>FCadastroVeiculos</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

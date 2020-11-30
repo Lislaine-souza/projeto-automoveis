@@ -12,11 +12,15 @@ uses
   UMarca in 'UMarca.pas' {FMarca},
   UCadastroMarca in 'UCadastroMarca.pas' {FCadastroMarca},
   UModelo in 'UModelo.pas' {FModelo},
-  UCadastroModelo in 'UCadastroModelo.pas' {FCadastroModelo};
+  UCadastroModelo in 'UCadastroModelo.pas' {FCadastroModelo},
+  UAutomoveis in 'UAutomoveis.pas' {FAutomoveis},
+  UCadastroVeiculos in 'UCadastroVeiculos.pas' {FCadastroVeiculos};
 
 begin
   Application.Initialize;
   Application.CreateForm(TFPrincipal, FPrincipal);
+  Application.CreateForm(TFAutomoveis, FAutomoveis);
+  Application.CreateForm(TFCadastroVeiculos, FCadastroVeiculos);
   Application.Run;
 
 end.

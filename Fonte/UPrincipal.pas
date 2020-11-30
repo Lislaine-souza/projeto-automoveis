@@ -19,10 +19,12 @@ type
     Usuarios: TMenuItem;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    Veiculos: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure UsuariosClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
+    procedure VeiculosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,7 +38,7 @@ implementation
 
 {$R *.fmx}
 
-uses UModulo, USplash, ULogin, UUsuario, UMarca, UModelo;
+uses UModulo, USplash, ULogin, UUsuario, UMarca, UModelo, UAutomoveis;
 
 procedure TFPrincipal.FormCreate(Sender: TObject);
 begin
@@ -64,7 +66,13 @@ end;
 procedure TFPrincipal.UsuariosClick(Sender: TObject);
 begin
   FUsuario := TFUsuario.Create(nil);
-  FUsuario.ShowModal;
+  FUsuario.Show;
+end;
+
+procedure TFPrincipal.VeiculosClick(Sender: TObject);
+begin
+  FAutomoveis := TFAutomoveis.Create(nil);
+  FAutomoveis.Show;
 end;
 
 end.

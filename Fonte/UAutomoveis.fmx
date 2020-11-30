@@ -1,7 +1,7 @@
-﻿object FModelo: TFModelo
+object FAutomoveis: TFAutomoveis
   Left = 0
   Top = 0
-  Caption = 'Modelo'
+  Caption = 'veiculos'
   ClientHeight = 480
   ClientWidth = 1017
   Fill.Color = xFFDAE2E4
@@ -30,8 +30,8 @@
     Align = FitRight
     CanFocus = True
     ClipChildren = True
-    Position.X = 222.033691406250000000
-    Size.Width = 794.966308593750000000
+    Position.X = 222.000000000000000000
+    Size.Width = 795.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     RowCount = 0
@@ -44,7 +44,7 @@
     Text = 'Carregar'
     OnClick = btnCarregarClick
   end
-  object Labusuários: TLabel
+  object Labautomoveis: TLabel
     StyledSettings = [Family]
     Position.X = 24.000000000000000000
     Position.Y = 8.000000000000000000
@@ -54,7 +54,7 @@
     TextSettings.Font.Size = 24.000000000000000000
     TextSettings.Font.StyleExt = {04040000000000000004000000}
     TextSettings.HorzAlign = Center
-    Text = 'Modelo'
+    Text = 'Veiculos'
   end
   object btnExcluir: TButton
     Position.X = 24.000000000000000000
@@ -71,29 +71,55 @@
   object SQLListar: TUniQuery
     Connection = Modulo.conexao
     SQL.Strings = (
-      'select * from modelo')
-    Left = 376
-    Top = 144
+      'select * from veiculos')
+    Left = 40
+    Top = 264
+    object SQLListarCOD_VEICULO: TIntegerField
+      FieldName = 'COD_VEICULO'
+      Required = True
+    end
+    object SQLListarNOME: TStringField
+      FieldName = 'NOME'
+      Size = 50
+    end
+    object SQLListarNUMERO: TIntegerField
+      FieldName = 'NUMERO'
+    end
+    object SQLListarANO_FABRICACAO: TDateField
+      FieldName = 'ANO_FABRICACAO'
+    end
+    object SQLListarANO_MODELO: TDateField
+      FieldName = 'ANO_MODELO'
+    end
+    object SQLListarPRECO_TABELA: TFloatField
+      FieldName = 'PRECO_TABELA'
+    end
+    object SQLListarPRECO_VENDA: TFloatField
+      FieldName = 'PRECO_VENDA'
+    end
+    object SQLListarCOD_MARCA: TIntegerField
+      FieldName = 'COD_MARCA'
+      Required = True
+    end
     object SQLListarCOD_MODELO: TIntegerField
       FieldName = 'COD_MODELO'
       Required = True
     end
-    object SQLListarDESCRICAO: TStringField
-      FieldName = 'DESCRICAO'
-      Size = 30
+    object SQLListarFOTO_VEICULO: TBlobField
+      FieldName = 'FOTO_VEICULO'
     end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = SQLListar
     ScopeMappings = <>
-    Left = 376
-    Top = 200
+    Left = 40
+    Top = 320
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 380
-    Top = 261
+    Left = 36
+    Top = 389
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

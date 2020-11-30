@@ -1,0 +1,273 @@
+object FCadastroVeiculos: TFCadastroVeiculos
+  Left = 0
+  Top = 0
+  Caption = 'q'
+  ClientHeight = 480
+  ClientWidth = 1017
+  Fill.Color = xFFDAE2E4
+  Fill.Kind = Solid
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Labveiculos: TLabel
+    StyledSettings = [Family]
+    Position.X = 312.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {04040000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Cadastro de  Veiculos'
+  end
+  object edtCodUsuario: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 120.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabNome: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Nome'
+  end
+  object LabanoFabrica: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 448.000000000000000000
+    Position.Y = 155.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Ano Fabrica'#231#227'o'
+  end
+  object edtNome: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 120.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtAnoFabrica: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 558.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 99.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnGravar: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 384.000000000000000000
+    Text = 'Gravar'
+  end
+  object edtMarca: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 120.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabMarca: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 195.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Marca'
+  end
+  object edtModelo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 120.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabModelo: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 236.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Modelo'
+  end
+  object edtFoto: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 120.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabFoto: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 275.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Foto'
+  end
+  object LabprecoTabela: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 448.000000000000000000
+    Position.Y = 235.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Pre'#231'o Tabela'
+  end
+  object edtPrecoTabela: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 559.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabNumero: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 448.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 92.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'N'#250'mero'
+  end
+  object edtNumero: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 559.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabprecoVenda: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 448.000000000000000000
+    Position.Y = 283.000000000000000000
+    Size.Width = 107.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Pre'#231'o Venda'
+  end
+  object edtPrecoVenda: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 557.000000000000000000
+    Position.Y = 287.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabCodcli: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'C'#243'digo'
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 448.000000000000000000
+    Position.Y = 195.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Ano Modelo'
+  end
+  object edtAnoModelo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 558.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 99.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SQLCadastro: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select v.* '
+      'from veiculos v'
+      'where v.cod_marca = :cod')
+    Left = 808
+    Top = 56
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'cod'
+        Value = nil
+      end>
+    object SQLCadastroCOD_VEICULO: TIntegerField
+      FieldName = 'COD_VEICULO'
+      Required = True
+    end
+    object SQLCadastroNOME: TStringField
+      FieldName = 'NOME'
+      Size = 50
+    end
+    object SQLCadastroNUMERO: TIntegerField
+      FieldName = 'NUMERO'
+    end
+    object SQLCadastroANO_FABRICACAO: TDateField
+      FieldName = 'ANO_FABRICACAO'
+    end
+    object SQLCadastroANO_MODELO: TDateField
+      FieldName = 'ANO_MODELO'
+    end
+    object SQLCadastroPRECO_TABELA: TFloatField
+      FieldName = 'PRECO_TABELA'
+    end
+    object SQLCadastroPRECO_VENDA: TFloatField
+      FieldName = 'PRECO_VENDA'
+    end
+    object SQLCadastroCOD_MARCA: TIntegerField
+      FieldName = 'COD_MARCA'
+      Required = True
+    end
+    object SQLCadastroCOD_MODELO: TIntegerField
+      FieldName = 'COD_MODELO'
+      Required = True
+    end
+    object SQLCadastroFOTO_VEICULO: TBlobField
+      FieldName = 'FOTO_VEICULO'
+    end
+  end
+  object SQLMax: TUniQuery
+    Connection = Modulo.conexao
+    SQL.Strings = (
+      'select max(m.cod_marca) as ULTIMO_COD'
+      'from marca m'
+      '')
+    Left = 728
+    Top = 16
+    object SQLMaxULTIMO_COD: TIntegerField
+      FieldName = 'ULTIMO_COD'
+      ReadOnly = True
+    end
+  end
+end

@@ -38,6 +38,7 @@ type
     procedure btnCarregarClick(Sender: TObject);
     procedure btnIncluirClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -79,6 +80,11 @@ begin
   FCadastro_usuario := TFCadastro_usuario.Create(nil);
   FCadastro_usuario.Show;
   FCadastro_usuario.proNovo;
+end;
+
+procedure TFUsuario.btnVoltarClick(Sender: TObject);
+begin
+  close;
 end;
 
 end.

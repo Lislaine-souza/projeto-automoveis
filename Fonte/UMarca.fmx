@@ -1,7 +1,7 @@
 ﻿object FMarca: TFMarca
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Marca'
   ClientHeight = 480
   ClientWidth = 1017
   Fill.Color = xFFDAE2E4

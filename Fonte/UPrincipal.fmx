@@ -33,5 +33,9 @@ object FPrincipal: TFPrincipal
       Text = 'Modelo'
       OnClick = MenuItem2Click
     end
+    object Veiculos: TMenuItem
+      Text = 'Veiculos'
+      OnClick = VeiculosClick
+    end
   end
 end

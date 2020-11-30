@@ -1,3 +1,6 @@
 ﻿[SQLusuario]
 Visible=False
 
+[FCadastro_usuario.SQLCadastro_usuario]
+Visible=False
+
